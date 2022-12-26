@@ -85,6 +85,8 @@ def userApi(request, pk=-1):
         except:
             return JsonResponse("No Such User!", safe=False)
 
+def home(request):
+    return JsonResponse("Talentera back-end", safe=False)
 
 @csrf_exempt
 @api_view (['GET', 'POST', 'DELETE', 'PUT'])
