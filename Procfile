@@ -1,0 +1,1 @@
+web: gunicorn talentera_backend.wsgi
