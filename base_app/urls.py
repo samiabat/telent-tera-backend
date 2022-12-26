@@ -21,7 +21,7 @@ urlpatterns = [
     path('reviews/', views.review),
     path('reports/', views.report, name = "reports"),
     path('report/<str:id>/', views.reporting, name = "reporting"),
-    path('messages/', views.message),
+    # path('messages/', views.message),
     path('messages/', views.getMessage),
     path('api/login/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
     path('api/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
